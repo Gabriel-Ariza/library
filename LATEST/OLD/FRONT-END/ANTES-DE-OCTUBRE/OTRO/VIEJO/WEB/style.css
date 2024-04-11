@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*{top: 0; left: 0; margin: 0; padding: 0; box-sizing: border-box;}
+
+
+.header{
+    height: 10vh;
+    background-color: rgb(185, 214, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 40px;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section-main {
+    position: absolute;
+    height: 100%;
+    border: 5px solid red;
+    padding: 5%;
+}
+#section-main p {
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(129, 158, 255);
+}
+
+.carousel
+{
+    top: 20%;
+    position: absolute;
+}
+
+
+.carousel-inner{
+    width: 1000px;
+}
+.carousel-item img{
+    background-size: cover;
+    height: 500px;
+    width: 800px;
+}
+
+.footer{
+    height: 10vh;
+    background-color: rgb(250, 255, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 40px;
+}

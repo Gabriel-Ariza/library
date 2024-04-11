@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!--CSS-->
+    <link rel="icon" href="sources/icono.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio | Azar </title>
+</head>
+
+<body>
+    
+    <header class="cabeza">
+        <h1>SERIE FIBONACCI</h1>
+    </header>
+
+
+    <section class="contenido">
+            <div class="contenedor_boton1">
+                <a class="btn boton1" onclick="handleButtonClick(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                PRIMER BOTON
+                </a>
+            </div>
+            <div class="contenedor_rpt1">
+                <p class="respuesta1">5</p>
+            </div>
+            <div class="contenedor_boton2" onclick="handleButtonClick(this)">
+                <a class="btn boton2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                SEGUNDO BOTON
+                </a>
+            </div>
+            <div class="contenedor_rpt2">
+                <p class="respuesta2">12</p>
+            </div>
+            <div class="contenedor_reset">
+                <p class="resultado_numeros">LACRA ASQUEROSA</p>
+                <button class="botones boton3" onclick="resetearJuego()">Volver A Jugar</button>
+            </div>
+
+
+            <div class="carta carta1">
+                <img src="img/tarot1.png" alt="carta de tarot">
+            </div>
+            <div class="carta carta2">
+                <img src="img/tarot2.png" alt="carta de tarot">
+            </div>
+            <div class="carta carta3">
+                <img src="img/tarot3.png" alt="carta de tarot">
+            </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

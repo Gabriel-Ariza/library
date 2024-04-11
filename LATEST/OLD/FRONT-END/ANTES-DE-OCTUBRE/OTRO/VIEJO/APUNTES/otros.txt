@@ -1,0 +1,23 @@
+var elemento = document.querySelector(".mi-clase"); 
+// Selecciona el primer elemento con la clase "mi-clase"
+var elementos = document.querySelectorAll("p"); 
+// Selecciona todos los elementos <p> en la página
+
+
+// Obtén una referencia al elemento <p> por su ID
+/* var miParrafo = document.getElementById("miParrafo");
+// Crea un nuevo elemento <strong>
+var strongElement = document.createElement("strong");
+// Establece el contenido del nuevo elemento <strong>
+strongElement.textContent = miParrafo.textContent;
+// Reemplaza el contenido del párrafo con el nuevo elemento <strong>
+miParrafo.textContent = ''; // Limpia el contenido original
+miParrafo.appendChild(strongElement); // Agrega el nuevo elemento <strong> como hijo del párrafo */
+
+
+//createElement y appendChild: Puedes utilizar createElement para crear nuevos elementos HTML
+//en el DOM y appendChild para agregarlos como hijos de otros elementos. Esto es útil para generar 
+//contenido dinámico en tu página web.
+/* var nuevoParrafo = document.createElement("p");
+nuevoParrafo.textContent = "Nuevo párrafo dinámico";
+document.body.appendChild(nuevoParrafo); */

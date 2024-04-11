@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* =========================  ESTILOS BOTONES  ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================  ESTILOS HEADER  ========================= */
+
+.cabeza {
+    height: 10vh;
+    width: 100%;
+    background-color: #e6224d;
+    display: grid;
+    place-items: center;
+}
+
+/* =========================  ESTILOS CONTENIDO  ========================= */
+.contenido {
+    height: 120vh;
+    width: 100%;
+    background: #050801;
+    /*background-image: radial-gradient(circle at center, #5b5a5a, #050801); */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: repeat(2, 1fr) 0.9fr 2fr 2fr;
+    grid-template-areas:
+    "bt1 bt1 bt1 rp1 rp1 rp1"
+    "bt2 bt2 bt2 rp2 rp2 rp2"
+    "btr btr btr btr btr btr"
+    "ca1 ca1 ca2 ca2 ca3 ca3"
+    "ca1 ca1 ca2 ca2 ca3 ca3"
+}
+
+.contenedor_boton1 {grid-area: bt1;}
+.contenedor_rpt1 {grid-area: rp1;}
+.contenedor_boton2 {grid-area: bt2;}
+.contenedor_rpt2 {grid-area: rp2;}
+.contenedor_reset {grid-area: btr;}
+.carta1 {grid-area:ca1;}
+.carta2 {grid-area:ca2;}
+.carta3 {grid-area:ca3;}
+
+@media (max-width: 700px) {
+    .contenido {
+        height: 280vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr) 0.9fr repeat(6, 2fr);
+        grid-template-areas:
+        "bt1 bt1"
+        "rp1 rp1"
+        "bt2 bt2"
+        "rp2 rp2"
+        "btr btr"
+        "ca1 ca1"
+        "ca1 ca1"
+        "ca2 ca2"
+        "ca2 ca2"
+        "ca3 ca3"
+        "ca3 ca3";
+    }
+    .carta {
+        align-items: flex-start;
+    }
+    .carta img{
+        height: 100% !important;
+        width: 400px !important;
+        border-radius: 40px;
+    }
+}
+@media (min-width: 701px) and (max-width: 930px) {
+    .carta img{
+        height: 400px !important;
+        width: 350px !important;
+        border-radius: 40px;
+    }
+}
+
+/* =========================  ESTILOS BOTONES  ========================= */
+
+.contenedor_boton1, .contenedor_boton2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Raleway', sans-serif;
+    font-weight: bold;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+.boton1 {color: #03e9f4;}
+.boton2 {color: #7EDD03;}
+
+.boton1:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,
+        0 0 50px #03e9f4, 0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.boton2:hover {
+    background: #7EDD03;
+    color: #050801;
+    box-shadow: 0 0 5px #7EDD03, 0 0 25px #7EDD03,
+        0 0 50px #7EDD03, 0 0 200px #7EDD03;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.btn span {
+    position: absolute;
+    display: block;
+}
+.btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    animation: animate1 3s linear infinite;
+}
+.boton1 span:nth-child(1){background: linear-gradient(90deg, transparent, #03e9f4);}
+.boton2 span:nth-child(1){background: linear-gradient(90deg, transparent, #7EDD03);}
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+.btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: transparent;
+    animation: animate2 3s linear infinite;
+    animation-delay: 750ms;
+}
+.boton1 span:nth-child(2){background: linear-gradient(90deg, transparent, #03e9f4);}
+.boton2 span:nth-child(2){background: linear-gradient(90deg, transparent, #7EDD03);}
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+.btn span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    animation: animate3 3s linear infinite;
+    animation-delay: 1500ms;
+}
+.boton1 span:nth-child(3){background: linear-gradient(90deg, transparent, #03e9f4);}
+.boton2 span:nth-child(3){background: linear-gradient(90deg, transparent, #7EDD03);}
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right:  100%;
+    }
+}
+.btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: transparent;
+    animation: animate4 3s linear infinite;
+    animation-delay: 2250ms;
+}
+.boton1 span:nth-child(4){background: linear-gradient(90deg, transparent, #03e9f4);}
+.boton2 span:nth-child(4){background: linear-gradient(90deg, transparent, #7EDD03);}
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom:  100%;
+    }
+}
+.boton3 {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+/*     padding: 15px; */
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 250px;
+    height: 59px;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+.boton3::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+}
+.boton3:hover::before {
+    width: 100%;
+}
+
+/* =========================  ESTILOS RESPUESTAS  ========================= */
+
+.contenedor_rpt1, .contenedor_rpt2 {
+    display: grid;
+    place-items: center;
+/*     background-color: #7EDD03; */
+}
+.respuesta1, .respuesta2{
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.contenedor_reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+.resultado_numeros {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+/* =========================  ESTILOS CARTAS  ========================= */
+
+.carta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta img{
+    height: 500px;
+    width: 500px;
+    border-radius: 40px;
+}
+
+/* =========================  ESTILOS FOOTER  ========================= */

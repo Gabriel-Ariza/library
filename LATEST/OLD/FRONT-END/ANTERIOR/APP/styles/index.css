@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inclusive Sans", sans-serif;
+}
+/* html {
+    scroll-snap-type: y mandatory;
+} */
+
+.contenedor {
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+}

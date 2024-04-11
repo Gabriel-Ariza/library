@@ -1,0 +1,22 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.container-fluid > div {
+    height: 10vh;
+}
+.container-fluid {
+    margin:0;
+    padding: 0;
+}
+
+#item1 {
+    background-color: rgb(255, 146, 164);
+}
+#item2 {
+    background-color: rgb(255, 239, 157);
+}
+#item3 {
+    background-color: rgb(174, 255, 157);
+}
+#item4 {
+    background-color: rgb(142, 244, 252);
+}

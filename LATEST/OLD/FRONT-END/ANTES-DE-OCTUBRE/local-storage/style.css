@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.contenedor {
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(to right, #fc67fa, #f4c4f3);  
+}
+
+.parte1_ecuacion {
+    height: 40vh;
+    border: 3px solid rgb(255, 150, 94);
+}
+.parte2_modo {
+    height: 40vh;
+    border: 3px solid rgb(94, 126, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "tit tit"
+    "opt btn";
+    gap: 10px;
+}
+.opt {
+    grid-area: tit;
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(172, 38, 255);
+}
+.casilla_seleccion {
+    grid-area: opt;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.boton_guardado {
+    grid-area: btn;
+    width: 150px;
+    height: 50px;
+    color: #000;
+    border-radius: 20px;
+}

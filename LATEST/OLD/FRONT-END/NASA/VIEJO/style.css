@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inclusive Sans", sans-serif;
+}
+::root {
+    --color_fondo: #000000;
+}
+
+::selection {
+    background-color: #000;
+    color: #4133ff;
+}
+body {
+    background: var(--color_fondo);
+}
+
+/* =========================  ESTILOS GENERALES ========================= */
+
+.container {
+    width: 100%;
+    height: 200vh;
+    background: var(--color_fondo);
+}
+
+
+
+/* =========================  ESTILOS BARRA DESPLAZAMIENTO ========================= */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1f36e4;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 50, 50, 0.8);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Juega Poker</title>
+</head>
+
+
+<body>
+
+    <header id="header">
+        <div id="contenedor-icono1"><div id="icono1"></div></div>
+
+        <h1>SERIE FIBONACCI</h1>
+
+        <div id="contenedor-icono2"><div id="icono2"></div></div>
+    </header>
+
+
+    <section id="contenedor">
+        <div id="contenido">
+            <section id="parte1">
+
+                <div id="content-boton1">
+                    <button id="btn1" class="boton-normal">Generar Primer Número</button>
+                </div>
+                <div id="content-respuesta1">
+                    <p id="randomNumber1" class="respuestas-numeros"></p>
+                </div>
+                
+                <div id="content-boton2">
+                    <button id="btn2" class="boton-normal">Generar Segundo Número</button>
+                </div>
+                <div id="content-respuesta2">
+                    <p id="randomNumber2" class="respuestas-numeros"></p>
+                </div>
+            
+                <div id="content-jugar">
+                    <p id="sumarRespuestas"></p>
+                    <button id="resetButton" class="boton-reset" onclick="resetearJuego()">Volver a Jugar</button>
+                </div>
+            </section>
+
+
+            <section id="parte2" style="display: none;">
+                <div id="contenedor-carta1">
+                    <div id="carta1"></div>
+                </div>
+                <div id="contenedor-carta2">
+                    <div id="carta2"></div>
+                </div>
+                <div id="contenedor-carta3">
+                    <div id="carta3"></div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

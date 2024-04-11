@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+* {margin: 0;padding: 0; box-sizing: border-box;}
+body {max-width: 100%;overflow-x: hidden;}
+
+.logoGP {
+    width: 90px;
+    height: 90px;
+}
+
+#contenedor-menu {
+    height: 13vh;
+    width: 90%;
+    margin: 3vh 10% 4vh;
+    /* border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.865); */
+}
+#lista-menu {
+    height: 13vh;
+    width: 90%;
+    top: 3vh;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 60px;
+}
+#lista-menu li {
+    display: flex;
+}
+#lista-menu li a {
+    margin: 14px 10px;
+    padding: 14px 45px;
+    font-size: 32px;
+    font: 700 28px "Chivo Mono", monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s ease;
+}
+#lista-menu li a:hover {
+    /* color: #30edf4;
+    text-shadow: 0 -10px 15px rgba(0, 114, 255, 0.8), 0 10px 15px rgba(0, 114, 255, 0.8),
+        -10px 0 15px rgba(0, 114, 255, 0.8), 10px 0 15px rgba(0, 114, 255, 0.8); */
+    scale: 1.15;
+}
+#lista-menu li a:active {
+    transition: 0.01s ease;
+    color: #ff8936;
+    text-shadow: 0 -8px 15px rgba(203, 32, 39, 0.7), 0 8px 15px rgba(203, 32, 39, 0.7);
+}
+#lista-menu:hover li a:not(:hover) {
+    color: white;
+    opacity: 0.4;
+    filter: blur(1.7px);
+}
+
+#contenedor {
+    height: 140vh;
+    padding: 0 0 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.gradiente-contenedor {
+    background: linear-gradient(to bottom left, #fba707, #fb5252);
+    /*background: linear-gradient(45deg, #fba707, #fb5252);*/
+    background-size: 400%;
+    animation: gradiente 4s infinite;
+}
+@keyframes gradiente {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+#inicio-imagen {
+    height: 100vh;
+    width: 86%;
+    background-image: url(motos1.jpg);
+    background-size: cover;
+    /* box-shadow: 0 -20px 27px #fb5252, 0 20px 27px #fba707,
+    -20px 0 27px #fba707, 20px 0 27px #fb5252; */
+/*     box-shadow: 0 -11px 16px #fba707, 0 11px 16px #ff5c1c,
+    -11px 0 16px #fb5252, 11px 0 16px #fba707; */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    position: relative;
+}
+#informacion {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+}
+/* #informacion:hover {
+    scale: 1.05;
+} */
+.card {
+    margin-left: 3%;
+    height: 80%;
+    width: 40%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover, .card.front {
+    transform: rotateY(180deg);
+}
+.titulo-degrade {
+    background-image: linear-gradient(to right, #c6FFDD, #FBD786, #f7797d);
+    background-clip: text;
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+    color: transparent;
+    font: 800 60px "Nunito", monospace;
+    /* Ajusta el tamaño y posicionamiento según sea necesario */
+}
+#gp {
+    font-size: 1.2em;
+    color: #ff9900;
+}
+.front-text, .back-text {
+    padding: 0 5% 5% 5%;
+    font-family: poppins;
+    line-height: 1.8;
+}
+.front-title, .back-title {
+    padding: 0 5% 10% 5%;
+    font: 700 40px "Chivo Mono", monospace;
+    color: #ff3b3b;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 20px;
+    color:  #FFFFFF;
+}
+.front {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.64);
+    border: 4px solid #FFA500;
+    border: 4px solid #ff9900;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.9);
+}
+.back {
+    background-color: #333333;
+    transform: rotateY(180deg);
+}
+.front-btn, .back-btn {
+    width: 150px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: #2714a1;
+    transition: .3s all ease-in-out;
+}
+.front-btn:hover, .back-btn:hover {
+    background: #3119d1;
+    transition: .3s all ease-in-out;
+    transform: translateY(-10px);
+    border: 3px solid #FF0000;
+}
+
+.titulos {
+    font: 500 70px "Chivo Mono", monospace;
+    text-shadow: 4px 4px cyan;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    color: transparent
+}
+#seccion-abajo {
+    height: 90vh;
+    background-color:rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: row;
+}
+#parte1-abajo {
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid #30edf4;
+    padding: 2vh 0;
+}
+#parte2-abajo {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    padding: 2vh 2%;
+}
+.parrafos {
+    color: white;
+    font-family: Verdana, Geneva;
+    font-size: 20px;
+}
+#parte2-abajo img {
+    margin: 5%;
+    height: 40%;
+}

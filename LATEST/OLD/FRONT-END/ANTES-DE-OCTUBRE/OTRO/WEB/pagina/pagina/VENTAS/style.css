@@ -1,0 +1,46 @@
+* {margin: 0;padding: 0;}
+
+#cuerpo {
+    max-width: 100%;
+    background: linear-gradient(to top, rgba(255, 87, 51, 0.5), rgba(239, 46, 28, 0.8));
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    margin: 10% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-general {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/bgd1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+
+    position: relative;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+}
+
+#contenido1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.38);
+    border-radius: 30px;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

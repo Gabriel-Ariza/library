@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eres mayor de edad?</title>
+</head>
+
+<body>
+    <h1>Comprobar Edad</h1>
+    <label for="edadInput">Ingresa tu edad:</label>
+    <input type="number" id="edadInput">
+    <button onclick="comprobarEdad()">Comprobar</button>
+    <p id="mensaje"></p>
+
+    <script>
+        function comprobarEdad() {
+            // Obtener el valor del campo de entrada
+            var edad = parseInt(document.getElementById("edadInput").value);
+
+            // Edad mínima para ser considerado mayor de edad
+            var comprobarEdad = 18;
+
+            // Comprobar si la edad ingresada es mayor o igual a la edad mínima
+            if (edad >= comprobarEdad) {
+                document.getElementById("mensaje").innerHTML = "Eres mayor de edad.";
+            } else {
+                document.getElementById("mensaje").innerHTML = "Eres menor de edad.";
+            }
+        }
+    </script> 
+</body>

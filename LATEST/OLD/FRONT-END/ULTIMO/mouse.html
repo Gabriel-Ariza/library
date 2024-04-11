@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/mouse_event.css">
+    <title>Prueba</title>
+</head>
+
+
+<body>
+
+    <h2>EVENTOS DEL MOUSE MANIPULACION DOM</h2>
+    <div id="caja" onclick="evento()" class="box">
+        evento mouse 1
+        <p>click normal</p>
+    </div>
+    <!-- click en el elemento con boton derecho -->
+    <div id="caja2" oncontextmenu="menu()" class="box">
+        evento mouse 2
+        <p>click derecho</p>
+    </div>
+    <!-- click en el elemento con boton derecho -->
+    <div id="caja3" ondblclick="doble()" class="box">
+        evento mouse 3
+        <p>doble click</p>
+    </div>
+    <!-- click en el elemento con cualquier boton -->
+    <div id="caja4" onmousedown="cualquier()" class="box">
+        evento mouse 4
+        <p>cualquier boton</p>
+    </div>
+    <!-- click en el elemento con cualquier boton -->
+    <div id="caja5" onmouseenter="entrando()" class="box">
+        evento mouse 5
+        <p>puntero sobre el elemento</p>
+    </div>
+    <!-- click en el elemento con cualquier boton -->
+    <div id="caja6" onmouseleave="saliendo()" class="box">
+        evento mouse 6
+        <p>puntero saliendo del elemento</p>
+    </div>
+    <!-- click en el elemento con cualquier boton -->
+    <div id="caja7" onmouseleave="moviendo()" class="box">
+        evento mouse 7
+        <p>moviendose en el elemento sin salirse</p>
+    </div>
+    <!-- click en el elemento con cualquier boton -->
+    <div id="caja8" onmouseup="presionando()" class="box">
+        evento mouse 8
+        <p>cuando dejamos de presionar el mouse</p>
+    </div>
+
+    <script src="JS/mouse.js"></script>
+</body>
+</html>

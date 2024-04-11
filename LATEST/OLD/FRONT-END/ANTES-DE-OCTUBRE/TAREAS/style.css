@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================  ESTILOS HEADER  ========================= */
+#header {
+    height: 15vh;
+    width: 100%;
+    background-color: #040405;
+    color: wheat;
+    display: grid;
+    grid-template: 1fr / 1fr 3fr 1fr;
+    place-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#contenedor-icono1, #contenedor-icono2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icono1, #icono2 {
+/*     background-image: url('img/dado.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 70%;
+}
+
+/* =========================  ESTILOS CONTENIDO  ========================= */
+
+#contenedor {
+    height: 85vh;
+    width: 100%;
+    background-color: #14151A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenido {
+    height: 100%;
+    width: 90%;
+    background-image: radial-gradient(circle at center, #a8a1a169, #040405);
+    display: grid;
+    grid-template: 1fr 1.2fr / 1fr;
+    place-items: center;
+}
+#parte1 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr 2fr / repeat(4, 1fr);
+    grid-template-areas:
+    "bt1 bt1 res1 res1"
+    "bt2 bt2 res2 res2"
+    "play play play play";
+    place-items: center;
+}
+#parte1 > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content-boton1 {grid-area: bt1;}
+#content-respuesta1 {grid-area: res1;}
+#content-boton2 {grid-area: bt2;}
+#content-respuesta2 {grid-area: res2;}
+#content-jugar {grid-area: play; display: flex; flex-direction: column;}
+
+.respuestas-numeros {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 700;
+}
+#sumarRespuestas {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#parte2 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    justify-content: space-evenly;
+
+}
+#contenedor-carta1, #contenedor-carta2, #contenedor-carta3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#carta1 {
+    background-image: url('img/corazones_m.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+}
+#carta2 {
+    background-image: url('img/espada_m.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+}
+#carta3 {
+    background-image: url('img/picas_m.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+}
+
+/* =========================  ESTILOS BOTONES  ========================= */
+
+.boton-reset {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 200px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+.boton-reset::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+}
+.boton-reset:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    /*enlazamos image al scroll*/
+    view-timeline-name: --image;
+    /*en que sentido debe ser el scroll*/
+    view-timeline-axis: block;
+    
+    /*enlazamos el scroll y el elemento*/
+    animation-timeline: --image;
+    /*que animacion vamos a usar*/
+    animation-name: show;
+
+    /*la animacion empieza cuando la img esta en el 25%
+    y la termine cuando la img este en un 50%*/
+    animation-range: entry 25% cover 45%;
+    /*la animacion funciona tanto arriba como abajo*/
+    animation-fill-mode: both;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Ecuacion Cuadrática</title>
+</head>
+
+
+<body>
+    <div class="contenedor" id="container">
+        <section class="parte1_ecuacion">
+            <h1>Cálculo aritmético de raíces de la función cuadrática</h1>
+            <label>Ingrese el valor de a:     </label>
+            <input type="number" id="a"><br><br>
+            <label>Ingrese el valor de b:     </label>
+            <input type="number" id="b"><br><br>
+            <label>Ingrese el valor de c:     </label>
+            <input type="number" id="c"><br><br>
+            <button id="boton" onclick="calcular()">Calcular</button><br>
+            <p id="x1">x1 = ?</p>
+            <p id="x2">x2 = ?</p>
+        </section>
+
+        <section class="parte2_modo">
+            <h1 class="opt">Escoge una opcion</h1>
+            <select name="" id="caja" class="casilla_seleccion">
+                <option value="default">Por Defecto</option>
+                <option value="dark">Modo Oscuro</option>
+                <option value="light">Modo Claro</option>
+            </select>
+            <button id="btn" class="boton_guardado">Guardar</button>
+        </section>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

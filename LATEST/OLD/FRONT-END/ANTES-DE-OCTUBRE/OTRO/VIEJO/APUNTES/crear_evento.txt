@@ -1,0 +1,60 @@
+var boton = document.getElementById("miBoton");
+
+boton.addEventListener("click", function() {
+    // Código a ejecutar cuando se haga clic en el botón
+});
+//removeEventListener para terminar un evento
+
+
+elemento.addEventListener(evento, función, [opciones]);
+// elemento: El elemento HTML al que deseas agregar un controlador de eventos.
+// evento: El nombre del evento que deseas escuchar, como "click", "mouseover", "change", "keydown", etc.
+
+// función: La función que se ejecutará cuando ocurra el evento. 
+// Esta función se denomina "manejador de eventos" o "listener".
+
+// [opciones] (opcional): Un objeto que puede contener opciones adicionales para configurar el comportamiento
+// del listener, como la captura de eventos o una vez.
+
+
+
+Eventos de ratón:
+click: Se dispara cuando se hace clic en un elemento.
+dblclick: Se dispara cuando se hace doble clic en un elemento.
+mousedown: Se dispara cuando se presiona un botón del ratón en un elemento.
+mouseup: Se dispara cuando se suelta un botón del ratón en un elemento.
+mousemove: Se dispara cuando se mueve el ratón sobre un elemento.
+mouseover: Se dispara cuando el ratón se mueve sobre un elemento.
+mouseout: Se dispara cuando el ratón sale de un elemento.
+Eventos de teclado:
+
+keydown: Se dispara cuando se presiona una tecla del teclado.
+keyup: Se dispara cuando se suelta una tecla del teclado.
+keypress: Se dispara cuando se mantiene presionada una tecla del teclado (no se utiliza comúnmente en la práctica).
+Eventos de formulario:
+
+submit: Se dispara cuando se envía un formulario.
+change: Se dispara cuando el valor de un elemento de formulario cambia (por ejemplo, un <input> o un <select>).
+input: Se dispara cuando se realiza una entrada en un elemento de formulario (similar a change, pero más sensible).
+Eventos de ventana:
+
+load: Se dispara cuando se completa la carga de la página web.
+resize: Se dispara cuando se cambia el tamaño de la ventana del navegador.
+scroll: Se dispara cuando se desplaza la página.
+Eventos de tiempo:
+
+setTimeout: Permite ejecutar una función después de un cierto período de tiempo.
+setInterval: Permite ejecutar una función en intervalos regulares de tiempo.
+Eventos de arrastrar y soltar:
+
+dragstart: Se dispara cuando se inicia un proceso de arrastrar un elemento.
+dragend: Se dispara cuando se completa el proceso de arrastre.
+dragenter, dragleave, dragover, drop: Se utilizan para controlar el comportamiento de arrastre y soltar de elementos.
+Eventos de medios:
+
+play, pause: Se disparan cuando se reproduce o pausa un elemento multimedia como un video o un audio.
+ended: Se dispara cuando un elemento multimedia llega al final.
+Eventos de enfoque:
+
+focus: Se dispara cuando un elemento recibe el foco (por ejemplo, un <input> cuando se hace clic en él o se selecciona mediante la tecla Tab).
+blur: Se dispara cuando un elemento pierde el foco.

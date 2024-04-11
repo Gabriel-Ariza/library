@@ -1,0 +1,161 @@
+* {margin: 0;padding: 0;}
+
+#cuerpo {
+    max-width: 100%;
+}
+
+#contenedor-menu {
+    width: 100%;
+    height: 12.5vh;
+    background-color: rgba(0, 0, 0, 0.865);
+    /*crear espacio arriba del bgd*/
+}
+#lista-menu {
+    height: 12.5vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.865);
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 100px;
+}
+#lista-menu li {
+    display: flex;
+}
+#lista-menu li a {
+    margin: 14px 10px;
+    padding: 14px 45px;
+    font-size: 32px;
+    font: 700 28px "Chivo Mono", monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#lista-menu li a:hover {
+    color: #30edf4;
+    box-shadow: 0 -10px 15px rgba(0, 114, 255, 0.8), 0 10px 15px rgba(0, 114, 255, 0.8),
+        -10px 0 15px rgba(0, 114, 255, 0.8), 10px 0 15px rgba(0, 114, 255, 0.8);
+}
+#lista-menu li a:active {
+    transition: 0.1s ease;
+    color: #ff8936;
+    box-shadow: 0 -10px 18px rgba(255, 138, 54, 0.88), 0 10px 18px rgba(255, 138, 54, 0.8);
+}
+#lista-menu:hover li a:not(:hover) {
+    color: white;
+    opacity: 0.4;
+    filter: blur(1.7px);
+}
+
+#contenedor {
+    width: 100%;
+    height: 299vh; /*altura pagina*/
+    overflow: hidden; 
+    position: relative;
+}
+#contenido1 {
+    height: 100vh;
+    background-image: url('imagen3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+#contenido-intermedio {
+    height: 90vh;
+    background-color: rgba(0, 115, 255, 0.84);
+}
+#contenido2 {
+    height: 110vh;
+    background-image: url('imagen2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#divisor {
+    height: 20vh;
+    background: linear-gradient(to bottom, rgba(24, 25, 31, 0.12), rgba(24, 25, 31, 1));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#pie-pagina p {
+    font-size: 12px;
+    color: rgba(255, 252, 246, 0.952);
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+#pie-pagina #arriba {
+    font-size: 16px;
+    font-family: poppins;
+    color: wheat;
+    padding-top: 15px;
+}
+
+#pie-pagina {
+    height: 30vh;
+    /*border: 4px solid burlywood;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    background-color: #18191f;
+}
+#contenedor-iconos {
+    height: 70%;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    /*background: #222424;
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid violet;*/
+}
+
+:root {
+    --icon-size: 50px;
+    --icon-padding: 10px 14px;
+    --icon-margin: 10px 10px;
+    --icon-text-shadow: 0 0 35px #0072ff, 0 0 75px #0072ff, 0 0 105px #0072ff, 0 0 140px #0072ff;
+    --col:  #00000080
+}
+/*Cambio en icon-size: 2px Proporción: 0.5 ProporciónSombra: 0.3 Cambio en padding y margin = 2px * 0.5 = 1px
+Cambio en sombra = 2px * 0.3 = 0.6px*/
+
+#apple,#twitter,#github,#facebook {
+    font-size: var(--icon-size);
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px var(--col), 10px 1px 12px var(--col),
+        2px 2px 10px var(--col), 2px 2px 3px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col);
+    border-radius: 20px;
+    padding: var(--icon-padding);
+    margin: var(--icon-margin);
+    animation: animate 3s linear infinite;
+    text-shadow: var(--icon-text-shadow);
+}
+#apple {animation-delay: 0.1s;}
+#twitter {animation-delay: 0.3s;}
+#facebook {animation-delay: 0.7s;}
+#github {animation-delay: 0.1s;}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg)
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+}

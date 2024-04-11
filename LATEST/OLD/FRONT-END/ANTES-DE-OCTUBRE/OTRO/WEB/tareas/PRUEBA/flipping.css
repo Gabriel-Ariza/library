@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2714a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card{
+    margin: 100px 100px;
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    box-shadow: -1px 13px 36px 1px rgba(0,0,0,0.75);
+}
+
+.card-btn{
+    padding: 10px 20px;
+    background-color: #2714a1;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Karla";
+}
+
+.card:hover{
+    transform: translateY(20px);
+    transition: 0.3s all ease-in-out;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.card-subtitle{
+    margin-left: 10px;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-family: "Karla";
+} */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo{
+    color: #fff;
+    font-family: "Karla";
+}
+
+.header{
+    padding: 20px 0;
+    background-color: #2714a1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-item{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: "Karla";
+    cursor: pointer;
+    font-size: 19px;
+    padding: 10px 20px;
+}
+
+.navbar-item:hover{
+    background-color: #fff;
+    color: #2714a1;
+    transition: .3s all ease-in-out;
+}
+
+
+.card {
+    margin-top: 300px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .front-text, .back-text{
+    width: 230px;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Karla";
+    row-gap: 40px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .front-btn, .back-btn{
+    width: 150px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: #2714a1;
+    transition: .3s all ease-in-out;
+  }
+
+  .front-btn:hover, .back-btn:hover{
+    background: #3119d1;
+    transition: .3s all ease-in-out;
+    transform: translateY(-5px);
+  }
+  
+  .front {
+    background-color: #ffffff;
+    z-index: 2;
+  }
+  
+  .back {
+    background-color: #e5e5e5;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+
+/* .login{
+    margin-top: 300px;
+    margin-left: 700px;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.login-text-title{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 72px;
+    text-align: center;
+    color: #212B27;
+}
+
+.login-text-subtitle{
+    width: 400px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #32403B;
+}
+
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
+
+.email-input, .password-input{
+    outline: none;
+    width: 400px;
+    background: #FFFFFF;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    padding: 20px 20px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.account-btn{
+    width: 200px;
+    padding: 0 20px;
+    background: #84C7AE;
+    border-radius: 23px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.account-btn:hover{
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+    background: #62a28b;
+    color: #e8e8e8;
+}
+
+.account-text{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #32403B;
+}
+
+.account-span{
+    text-decoration: underline;
+    cursor: pointer;
+} */

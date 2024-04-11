@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav li {
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 400px; /* Altura del encabezado */
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 800px; /* Altura de las secciones */
+    padding: 40px;
+}
+
+#contacto {
+    background-color: #f2f2f2;
+}
+
+#sobre-mi {
+    background-color: #e0e0e0;
+}

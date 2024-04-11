@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+
+* {margin: 0;padding: 0; box-sizing: border-box;}
+body {max-width: 100%;overflow-x: hidden;}
+:root {
+    --rad:60px;
+    --bor:15px solid rgba(0, 0, 0, 0.845);
+}
+
+/*!---------- CONTENEDOR TOTAL Y FONDO COLOR  ----------*/
+#global {
+    /* altura de la pagina web*/
+    height: 210vh;
+    padding: 0 5% 5vh;
+    background-color: rgb(36, 36, 36);
+    /* background: linear-gradient(to top, rgba(255, 5, 51, 0.7), rgba(255, 84, 5, 0.7)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 30px;
+    z-index: 100;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+header h1{
+    float: left;
+    font-size: 22px;
+}
+
+header nav{
+    float: left;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}/*  pone el unorder list en horizontal*/
+header nav ul li{
+    margin: 0 38px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 33px;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: .5s;
+    border-radius: 20px;
+}
+header nav ul li a:hover{
+    background-color: #000;
+    color: white;
+
+}
+header .busqueda{
+    float: right;
+    
+}
+header .busqueda input{
+    display: inline-block;
+    width: 200px;
+    border: none;
+    background-color: rgba(0,0,0,.4);
+    padding: 7px;
+    outline: none;
+    color: white;
+    border-right: 3px;
+    transition: .5s;
+    opacity: 0.3;
+    
+}
+header .busqueda:hover input{
+    opacity: 1;
+}
+header .busqueda i{
+    cursor: pointer;
+}
+
+
+/*!---------- SECCION QUE DEFINE LA IMAGEN  ----------*/
+#contenedor-imagen {
+    /* altura de la imagen */
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 5vh;
+    background-image: url(motos2.jpg);
+    background-size: cover;
+    border: var(--bor);
+    border-radius: var(--rad);
+}
+#texto-imagen {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    /* border: 4px solid rgb(0, 217, 255);
+    border-radius: var(--rad);*/
+}
+
+/*!---------- SECCION SEGUNDO CONTENEDOR  ----------*/
+#contenedor2 {
+    /* altura de la imagen */
+    height: 90vh;
+    width: 100%;
+    background-image: url(lemans.jpg);
+    background-size: cover;
+    border: var(--bor);
+    border-radius: var(--rad)
+    
+}
+#imagen-texto {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+/*
+    border-width: 15px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgba(255, 5, 51, 0.7), rgba(255, 84, 5, 0.7));
+    border-image-slice: 1;
+    border-radius: 30px;
+*/
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    font: normal bolder 90px/1 'Nunito', sans-serif;
+    letter-spacing: -2px;
+    padding: 10px 50px 35px;
+}
+p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 0 50% 0 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
